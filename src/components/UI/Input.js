@@ -14,6 +14,6 @@ const Input = props => {
 Input.propTypes = {
   label: PropTypes.string,
   input: PropTypes.object,
-}
+};
 
 export default Input;
