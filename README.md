@@ -1,6 +1,6 @@
 # React meal
 
-Food order app written in React
+Food order app made to learn React mid-concepts (Hooks/Context/Reducers/Ref)
 
 ## Available Scripts
 
