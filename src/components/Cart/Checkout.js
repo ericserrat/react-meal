@@ -48,7 +48,12 @@ const Checkout = (props) => {
       return;
     }
 
-    //Submit data
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      postalCode: enteredPostalCode,
+      city: enteredCity,
+    });
   };
 
   const nameControlClasses = `${classes.control} ${formInputsValidity.name ? '' : classes.invalid}`;
@@ -87,6 +92,7 @@ const Checkout = (props) => {
 };
 
 Checkout.propTypes = {
-    onCancel: PropTypes.func,
+  onCancel: PropTypes.func,
+  onConfirm: PropTypes.func,
 };
 export default Checkout;
